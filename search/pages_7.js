@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['técnica_0',['Módulo GovDev - Documentação Técnica',['../index.html',1,'']]],
-  ['técnicas_1',['Notas Técnicas',['../notes.html',1,'']]]
+  ['módulo_20govdev_20documentação_20técnica_0',['Módulo GovDev - Documentação Técnica',['../index.html',1,'']]]
 ];

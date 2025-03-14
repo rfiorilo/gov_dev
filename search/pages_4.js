@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['instruções_20de_20compilação_0',['Instruções de Compilação',['../compilation.html',1,'']]]
+  ['ferramentas_20de_20análise_20e_20depuração_0',['Ferramentas de Análise e Depuração',['../depuration.html',1,'']]]
 ];

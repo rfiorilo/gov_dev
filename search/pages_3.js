@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['govdev_20documentação_20técnica_0',['Módulo GovDev - Documentação Técnica',['../index.html',1,'']]]
+  ['e_20depuração_0',['Ferramentas de Análise e Depuração',['../depuration.html',1,'']]],
+  ['exemplo_20de_20uso_1',['Exemplo de uso',['../example.html',1,'']]]
 ];
