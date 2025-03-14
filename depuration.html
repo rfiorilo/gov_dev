@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GovDev - Módulo Federal de Prototipação: Ferramentas de Análise e Depuração</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GovDev - Módulo Federal de Prototipação
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">Ferramentas de Análise e Depuração</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Ao desenvolver programas que utilizam bibliotecas externas, como o módulo GovDev, é altamente recomendável incorporar ferramentas de análise e depuração ao seu fluxo de trabalho.</p>
+<p>Essas ferramentas são essenciais para identificar problemas comuns no código, garantindo que seu programa seja robusto, eficiente e livre de erros críticos.</p>
+<p><b>Por Que Usar Ferramentas de Análise e Depuração?</b></p><ol type="1">
+<li>Identificação de Problemas de Memória:<ul>
+<li>Muitos erros difíceis de detectar estão relacionados ao uso inadequado de memória, como vazamentos de memória ou acessos inválidos a áreas de memória não alocadas. Esses problemas podem causar falhas inesperadas ou comprometer o desempenho do programa.</li>
+<li>Ferramentas especializadas permitem monitorar o uso de memória, ajudando a identificar blocos de memória que não foram liberados corretamente ou acessos fora dos limites de arrays e ponteiros.</li>
+</ul>
+</li>
+<li>Depuração de Erros Lógicos:<ul>
+<li>Mesmo que seu código compile sem erros, ele pode conter bugs lógicos que só aparecem durante a execução. Ferramentas de depuração permitem executar o programa passo a passo, inspecionar variáveis e identificar onde os problemas ocorrem.</li>
+</ul>
+</li>
+<li>Verificação de Código Estático:<ul>
+<li>Ferramentas de análise estática escaneiam seu código-fonte em busca de potenciais problemas antes mesmo da compilação. Elas ajudam a prevenir erros relacionados a práticas inadequadas de programação, como variáveis não inicializadas ou condições incorretas.</li>
+</ul>
+</li>
+<li>Garantia de Qualidade:<ul>
+<li>O uso de ferramentas de análise e depuração demonstra um compromisso com a qualidade do software. Programas bem testados e livres de erros são mais confiáveis, seguros e fáceis de manter, especialmente em projetos colaborativos ou institucionais.</li>
+</ul>
+</li>
+</ol>
+<p><b>Ferramentas Recomendadas</b></p>
+<p>Aqui estão algumas ferramentas amplamente utilizadas que podem auxiliar no desenvolvimento de programas robustos:</p>
+<ul>
+<li><em>AddressSanitizer:</em> ferramenta integrada ao GCC e Clang que detecta erros de memória, como acessos fora dos limites, uso após liberação e vazamentos de memória. É ideal para identificar problemas de alocação e desalocação de memória dinâmica.</li>
+<li><em>Cppcheck:</em> ferramenta que realiza verificações estáticas no código-fonte, identificando potenciais problemas antes da compilação. Ajuda a prevenir erros relacionados a práticas inadequadas de programação, como variáveis não inicializadas, vazamentos de recursos ou condições incorretas.</li>
+<li><em>GDB (GNU Debugger):</em> ferramenta poderosa para depurar programas. Permite executar o programa passo a passo, inspecionar variáveis, definir pontos de interrupção e analisar o estado do programa em tempo real, facilitando a identificação de bugs lógicos e comportamentos inesperados.</li>
+<li><em>Valgrind:</em> ferramenta abrangente para análise de memória e desempenho. É particularmente útil para detectar vazamentos de memória, acessos inválidos e outros problemas relacionados ao uso de memória. Além disso, oferece suporte a ferramentas adicionais para análise de cache e profiling.</li>
+</ul>
+<dl class="section warning"><dt>Aviso</dt><dd>Incorporar ferramentas de análise e depuração ao seu fluxo de trabalho é essencial para criar programas robustos e confiáveis. Elas ajudam a identificar problemas antes que se tornem críticos, economizando tempo e esforço no processo de desenvolvimento. Ao usar o módulo GovDev ou qualquer outra biblioteca externa, certifique-se de seguir boas práticas de programação e aproveitar as ferramentas disponíveis para garantir que seu programa funcione conforme o esperado. </dd></dl>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
