@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GovDev - Módulo Federal de Prototipação: Exemplo de uso</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GovDev - Módulo Federal de Prototipação
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">Exemplo de uso</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Exemplo de uso da iteração sobre estados </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="gov__dev_8h.html">gov_dev.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() </div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">int</span> i;</div>
+<div class="line">    <a class="code hl_function" href="group__estados.html#gac080d70661b0d02c3faf9cb5a580419b">reset_state_counter</a>();</div>
+<div class="line">    <span class="keywordflow">for</span>(i = 0; i &lt; 30, i++) </div>
+<div class="line">    {</div>
+<div class="line">        printf(<span class="stringliteral">&quot;Estado atual: %s\n&quot;</span>, <a class="code hl_function" href="group__estados.html#ga9ae23347d92857c750a8381b859c8f5d">current_state_name</a>());</div>
+<div class="line">        <a class="code hl_function" href="group__estados.html#ga3af178654ab0a443b57b13db6fb14857">next_state</a>();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="group__interface.html#gae79a2d4b7b02d99d3b4c49c90c614f3a">wait_enter</a>(<span class="stringliteral">&quot;Tecle ENTER para continuar...&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="group__fabricantes.html#ga91bbd86c93d294d81c5ee9ee654d21de">show_manufacturers_by_id</a>();</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="agov__dev_8h_html"><div class="ttname"><a href="gov__dev_8h.html">gov_dev.h</a></div></div>
+<div class="ttc" id="agroup__estados_html_ga3af178654ab0a443b57b13db6fb14857"><div class="ttname"><a href="group__estados.html#ga3af178654ab0a443b57b13db6fb14857">next_state</a></div><div class="ttdeci">void next_state(void)</div><div class="ttdoc">Avança para o próximo estado na lista de estados, incrementando o índice interno de controle de estad...</div></div>
+<div class="ttc" id="agroup__estados_html_ga9ae23347d92857c750a8381b859c8f5d"><div class="ttname"><a href="group__estados.html#ga9ae23347d92857c750a8381b859c8f5d">current_state_name</a></div><div class="ttdeci">const char * current_state_name(void)</div><div class="ttdoc">Obtém o nome completo do estado atualmente selecionado no sistema, de acordo com o índice interno de ...</div></div>
+<div class="ttc" id="agroup__estados_html_gac080d70661b0d02c3faf9cb5a580419b"><div class="ttname"><a href="group__estados.html#gac080d70661b0d02c3faf9cb5a580419b">reset_state_counter</a></div><div class="ttdeci">void reset_state_counter(void)</div><div class="ttdoc">Reinicia o contador de estados interno para o início da sequência, fazendo com que o estado a ser ace...</div></div>
+<div class="ttc" id="agroup__fabricantes_html_ga91bbd86c93d294d81c5ee9ee654d21de"><div class="ttname"><a href="group__fabricantes.html#ga91bbd86c93d294d81c5ee9ee654d21de">show_manufacturers_by_id</a></div><div class="ttdeci">void show_manufacturers_by_id(void)</div><div class="ttdoc">Exibe no terminal uma lista de todos os fabricantes de máquinas autônomas cadastrados,...</div></div>
+<div class="ttc" id="agroup__interface_html_gae79a2d4b7b02d99d3b4c49c90c614f3a"><div class="ttname"><a href="group__interface.html#gae79a2d4b7b02d99d3b4c49c90c614f3a">wait_enter</a></div><div class="ttdeci">void wait_enter(const char *msg)</div><div class="ttdoc">Exibe uma mensagem e aguarda pressionamento da tecla ENTER.</div></div>
+</div><!-- fragment --><p>Exemplo de uso das funções que usam menus. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="gov__dev_8h.html">gov_dev.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <span class="keywordtype">int</span> opcao = <a class="code hl_function" href="group__interface.html#ga219c351c9f40d16f05553c99a3b7e378">main_menu</a>();</div>
+<div class="line">    <span class="keywordflow">if</span>(opcao == <a class="code hl_define" href="group__macros__opcoes.html#ga3bfc887a12bc862278a539cdf2f599f1">CATEGORY_REPORT_OPTION</a>) {</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">char</span> *categoria = <a class="code hl_function" href="group__categorias.html#ga8e913768ab0753fb162af594dd4c85dc">select_category</a>();</div>
+<div class="line">        printf(<span class="stringliteral">&quot;Categoria selecionada: %s\n&quot;</span>, <a class="code hl_function" href="group__categorias.html#ga21f84734269af01232e49e8c6e01b87c">get_category_name_by_code</a>(categoria));</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="agroup__categorias_html_ga21f84734269af01232e49e8c6e01b87c"><div class="ttname"><a href="group__categorias.html#ga21f84734269af01232e49e8c6e01b87c">get_category_name_by_code</a></div><div class="ttdeci">const char * get_category_name_by_code(const char *code)</div><div class="ttdoc">Obtém o nome completo da categoria de máquina autônoma a partir de seu código numérico.</div></div>
+<div class="ttc" id="agroup__categorias_html_ga8e913768ab0753fb162af594dd4c85dc"><div class="ttname"><a href="group__categorias.html#ga8e913768ab0753fb162af594dd4c85dc">select_category</a></div><div class="ttdeci">const char * select_category(void)</div><div class="ttdoc">Interface interativa para seleção de categorias cadastradas.</div></div>
+<div class="ttc" id="agroup__interface_html_ga219c351c9f40d16f05553c99a3b7e378"><div class="ttname"><a href="group__interface.html#ga219c351c9f40d16f05553c99a3b7e378">main_menu</a></div><div class="ttdeci">int main_menu(void)</div><div class="ttdoc">Exibe o menu principal e gerencia a navegação por setas.</div></div>
+<div class="ttc" id="agroup__macros__opcoes_html_ga3bfc887a12bc862278a539cdf2f599f1"><div class="ttname"><a href="group__macros__opcoes.html#ga3bfc887a12bc862278a539cdf2f599f1">CATEGORY_REPORT_OPTION</a></div><div class="ttdeci">#define CATEGORY_REPORT_OPTION</div><div class="ttdef"><b>Definição</b> gov_dev.h:61</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
