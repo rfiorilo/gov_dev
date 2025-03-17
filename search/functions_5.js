@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reset_5fstate_5fcounter_0',['reset_state_counter',['../group__estados.html#gac080d70661b0d02c3faf9cb5a580419b',1,'gov_dev.h']]]
+  ['previous_5fstate_0',['previous_state',['../group__estados.html#ga6472468e25eb1c3aba23adab681e57ea',1,'gov_dev.h']]]
 ];

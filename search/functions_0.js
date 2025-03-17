@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['current_5fstate_5fabbr_0',['current_state_abbr',['../group__estados.html#ga480587e52422b55fe9c1c211f2094ffe',1,'gov_dev.h']]],
-  ['current_5fstate_5fname_1',['current_state_name',['../group__estados.html#ga9ae23347d92857c750a8381b859c8f5d',1,'gov_dev.h']]]
+  ['apply_5fmask_5fcnpj_0',['apply_mask_cnpj',['../group__mascaras.html#ga42aaf1268367dfdb30ed1f596bf94b13',1,'gov_dev.h']]],
+  ['apply_5fmask_5fcpf_1',['apply_mask_cpf',['../group__mascaras.html#ga21dfe33a708ddabbf2babcb01404a200',1,'gov_dev.h']]],
+  ['apply_5fmask_5frenamaut_2',['apply_mask_renamaut',['../group__mascaras.html#gac03af116e82c49abcaa02b8e000264e7',1,'gov_dev.h']]]
 ];
