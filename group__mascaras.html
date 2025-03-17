@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GovDev - Módulo Federal de Prototipação: Aplicação de máscaras e validações</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GovDev - Módulo Federal de Prototipação
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Aplicação de máscaras e validações</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Operações para aplicação ou remoção de máscaras e para validação de CPF, CNPJ e RENAMAUT.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga21dfe33a708ddabbf2babcb01404a200" id="r_ga21dfe33a708ddabbf2babcb01404a200"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mascaras.html#ga21dfe33a708ddabbf2babcb01404a200">apply_mask_cpf</a> (const char *input, char *output)</td></tr>
+<tr class="memdesc:ga21dfe33a708ddabbf2babcb01404a200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica máscara de formatação para CPF.  <br /></td></tr>
+<tr class="separator:ga21dfe33a708ddabbf2babcb01404a200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42aaf1268367dfdb30ed1f596bf94b13" id="r_ga42aaf1268367dfdb30ed1f596bf94b13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mascaras.html#ga42aaf1268367dfdb30ed1f596bf94b13">apply_mask_cnpj</a> (const char *input, char *output)</td></tr>
+<tr class="memdesc:ga42aaf1268367dfdb30ed1f596bf94b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica máscara de formatação para CNPJ.  <br /></td></tr>
+<tr class="separator:ga42aaf1268367dfdb30ed1f596bf94b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac03af116e82c49abcaa02b8e000264e7" id="r_gac03af116e82c49abcaa02b8e000264e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mascaras.html#gac03af116e82c49abcaa02b8e000264e7">apply_mask_renamaut</a> (const char *input, char *output)</td></tr>
+<tr class="memdesc:gac03af116e82c49abcaa02b8e000264e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica máscara de formatação para RENAMAUT.  <br /></td></tr>
+<tr class="separator:gac03af116e82c49abcaa02b8e000264e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac26d1ccf7faf3ee5820ddf5134a22442" id="r_gac26d1ccf7faf3ee5820ddf5134a22442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mascaras.html#gac26d1ccf7faf3ee5820ddf5134a22442">remove_mask</a> (const char *input, char *output)</td></tr>
+<tr class="memdesc:gac26d1ccf7faf3ee5820ddf5134a22442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove máscara de formatação de qualquer entrada.  <br /></td></tr>
+<tr class="separator:gac26d1ccf7faf3ee5820ddf5134a22442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadecd7f93e3bc6fde56e12a4eb7f1ed8b" id="r_gadecd7f93e3bc6fde56e12a4eb7f1ed8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mascaras.html#gadecd7f93e3bc6fde56e12a4eb7f1ed8b">validate_cpf</a> (const char *cpf)</td></tr>
+<tr class="memdesc:gadecd7f93e3bc6fde56e12a4eb7f1ed8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida um CPF usando o cálculo dos dígitos verificadores.  <br /></td></tr>
+<tr class="separator:gadecd7f93e3bc6fde56e12a4eb7f1ed8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa5150d0953254a05f3ec0bfc3dbe405" id="r_gafa5150d0953254a05f3ec0bfc3dbe405"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mascaras.html#gafa5150d0953254a05f3ec0bfc3dbe405">validate_cnpj</a> (const char *cnpj)</td></tr>
+<tr class="memdesc:gafa5150d0953254a05f3ec0bfc3dbe405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida um CNPJ usando o cálculo dos dígitos verificadores.  <br /></td></tr>
+<tr class="separator:gafa5150d0953254a05f3ec0bfc3dbe405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga28efb1d46f3acd048370389fa10f7b3c" id="r_ga28efb1d46f3acd048370389fa10f7b3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mascaras.html#ga28efb1d46f3acd048370389fa10f7b3c">validate_renamaut</a> (const char *renamaut)</td></tr>
+<tr class="memdesc:ga28efb1d46f3acd048370389fa10f7b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida um RENAMAUT usando consultas às bases de dados federais.  <br /></td></tr>
+<tr class="separator:ga28efb1d46f3acd048370389fa10f7b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Operações para aplicação ou remoção de máscaras e para validação de CPF, CNPJ e RENAMAUT. </p>
+<p>Estas funções permitem formatar strings de entrada com máscaras específicas e validar CPF, CNPJ e RENAMAUT. </p>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="ga42aaf1268367dfdb30ed1f596bf94b13" name="ga42aaf1268367dfdb30ed1f596bf94b13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42aaf1268367dfdb30ed1f596bf94b13">&#9670;&#160;</a></span>apply_mask_cnpj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply_mask_cnpj </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aplica máscara de formatação para CNPJ. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>CNPJ sem máscara (14 dígitos). </td></tr>
+    <tr><td class="paramname">output</td><td>Buffer para armazenar o CNPJ formatado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga21dfe33a708ddabbf2babcb01404a200" name="ga21dfe33a708ddabbf2babcb01404a200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21dfe33a708ddabbf2babcb01404a200">&#9670;&#160;</a></span>apply_mask_cpf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply_mask_cpf </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aplica máscara de formatação para CPF. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>CPF sem máscara (11 dígitos). </td></tr>
+    <tr><td class="paramname">output</td><td>Buffer para armazenar o CPF formatado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac03af116e82c49abcaa02b8e000264e7" name="gac03af116e82c49abcaa02b8e000264e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac03af116e82c49abcaa02b8e000264e7">&#9670;&#160;</a></span>apply_mask_renamaut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply_mask_renamaut </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aplica máscara de formatação para RENAMAUT. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>RENAMAUT sem máscara (16 caracteres). </td></tr>
+    <tr><td class="paramname">output</td><td>Buffer para armazenar o RENAMAUT formatado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac26d1ccf7faf3ee5820ddf5134a22442" name="gac26d1ccf7faf3ee5820ddf5134a22442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac26d1ccf7faf3ee5820ddf5134a22442">&#9670;&#160;</a></span>remove_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remove_mask </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove máscara de formatação de qualquer entrada. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>String formatada com máscara. </td></tr>
+    <tr><td class="paramname">output</td><td>Buffer para armazenar a string sem máscara. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gafa5150d0953254a05f3ec0bfc3dbe405" name="gafa5150d0953254a05f3ec0bfc3dbe405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa5150d0953254a05f3ec0bfc3dbe405">&#9670;&#160;</a></span>validate_cnpj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validate_cnpj </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cnpj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Valida um CNPJ usando o cálculo dos dígitos verificadores. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cnpj</td><td>CNPJ a ser validado (14 dígitos). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int Retorna 1 se o CNPJ for válido, 0 caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="gadecd7f93e3bc6fde56e12a4eb7f1ed8b" name="gadecd7f93e3bc6fde56e12a4eb7f1ed8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadecd7f93e3bc6fde56e12a4eb7f1ed8b">&#9670;&#160;</a></span>validate_cpf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validate_cpf </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cpf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Valida um CPF usando o cálculo dos dígitos verificadores. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cpf</td><td>CPF a ser validado (11 dígitos). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int Retorna 1 se o CPF for válido, 0 caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="ga28efb1d46f3acd048370389fa10f7b3c" name="ga28efb1d46f3acd048370389fa10f7b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga28efb1d46f3acd048370389fa10f7b3c">&#9670;&#160;</a></span>validate_renamaut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int validate_renamaut </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>renamaut</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Valida um RENAMAUT usando consultas às bases de dados federais. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renamaut</td><td>RENAMAUT a ser validado (16 caracteres). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int Retorna 1 se o RENAMAUT for válido, 0 caso contrário. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
