@@ -92,11 +92,13 @@ Funções</h2></td></tr>
 <tr class="memitem:ga480587e52422b55fe9c1c211f2094ffe" id="r_ga480587e52422b55fe9c1c211f2094ffe"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__estados.html#ga480587e52422b55fe9c1c211f2094ffe">current_state_abbr</a> (void)</td></tr>
 <tr class="memdesc:ga480587e52422b55fe9c1c211f2094ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém a sigla do estado atualmente selecionado no sistema, de acordo com o índice interno de controle de estados.  <br /></td></tr>
 <tr class="separator:ga480587e52422b55fe9c1c211f2094ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3af178654ab0a443b57b13db6fb14857" id="r_ga3af178654ab0a443b57b13db6fb14857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__estados.html#ga3af178654ab0a443b57b13db6fb14857">next_state</a> (void)</td></tr>
-<tr class="memdesc:ga3af178654ab0a443b57b13db6fb14857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Avança para o próximo estado na lista de estados, incrementando o índice interno de controle de estados.  <br /></td></tr>
+<tr class="memitem:ga3af178654ab0a443b57b13db6fb14857" id="r_ga3af178654ab0a443b57b13db6fb14857"><td class="memItemLeft" align="right" valign="top"><a id="ga3af178654ab0a443b57b13db6fb14857" name="ga3af178654ab0a443b57b13db6fb14857"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>next_state</b> (void)</td></tr>
+<tr class="memdesc:ga3af178654ab0a443b57b13db6fb14857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Avança para o próximo estado na lista de estados, incrementando o índice interno de controle de estados Se o índice atingir o final da lista, volta para o primeiro estado, criando um ciclo. <br /></td></tr>
 <tr class="separator:ga3af178654ab0a443b57b13db6fb14857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6472468e25eb1c3aba23adab681e57ea" id="r_ga6472468e25eb1c3aba23adab681e57ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__estados.html#ga6472468e25eb1c3aba23adab681e57ea">previous_state</a> (void)</td></tr>
-<tr class="memdesc:ga6472468e25eb1c3aba23adab681e57ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrocede para o estado anterior na lista de estados, decrementando o índice interno de controle de estados.  <br /></td></tr>
+<tr class="memitem:ga6472468e25eb1c3aba23adab681e57ea" id="r_ga6472468e25eb1c3aba23adab681e57ea"><td class="memItemLeft" align="right" valign="top"><a id="ga6472468e25eb1c3aba23adab681e57ea" name="ga6472468e25eb1c3aba23adab681e57ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>previous_state</b> (void)</td></tr>
+<tr class="memdesc:ga6472468e25eb1c3aba23adab681e57ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrocede para o estado anterior na lista de estados, decrementando o índice interno de controle de estados Se o índice já estiver no início da lista (primeiro estado), retrocede para o último estado, completando o ciclo de navegação. <br /></td></tr>
 <tr class="separator:ga6472468e25eb1c3aba23adab681e57ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac080d70661b0d02c3faf9cb5a580419b" id="r_gac080d70661b0d02c3faf9cb5a580419b"><td class="memItemLeft" align="right" valign="top"><a id="gac080d70661b0d02c3faf9cb5a580419b" name="gac080d70661b0d02c3faf9cb5a580419b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_state_counter</b> (void)</td></tr>
@@ -202,48 +204,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_state_counter</
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>const char* Nome completo (ex: "Mato Grosso do Sul") ou NULL se não encontrado </dd></dl>
-
-</div>
-</div>
-<a id="ga3af178654ab0a443b57b13db6fb14857" name="ga3af178654ab0a443b57b13db6fb14857"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3af178654ab0a443b57b13db6fb14857">&#9670;&#160;</a></span>next_state()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void next_state </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Avança para o próximo estado na lista de estados, incrementando o índice interno de controle de estados. </p>
-<p>Se o índice atingir o final da lista, volta para o primeiro estado, criando um ciclo. </p>
-
-</div>
-</div>
-<a id="ga6472468e25eb1c3aba23adab681e57ea" name="ga6472468e25eb1c3aba23adab681e57ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6472468e25eb1c3aba23adab681e57ea">&#9670;&#160;</a></span>previous_state()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void previous_state </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Retrocede para o estado anterior na lista de estados, decrementando o índice interno de controle de estados. </p>
-<p>Se o índice já estiver no início da lista (primeiro estado), retrocede para o último estado, completando o ciclo de navegação. </p>
 
 </div>
 </div>
